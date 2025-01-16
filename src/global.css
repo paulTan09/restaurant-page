@@ -1,0 +1,162 @@
+body {
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e8e8e8;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Helvetica, Cantarell, Ubuntu, Roboto, Noto, Arial, sans-serif; 
+}
+a {
+    color: #d4af37;
+    text-decoration: none;
+}
+#content {
+    text-align: center;
+    min-height: min-content;
+    background-color: #3b3b3b;
+    flex: 1;
+    width: 75%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* NAVBAR */
+#headerContainer {
+    background-color: #3b3b3b;
+    color: whitesmoke;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+#navList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.navBtn {
+    padding: 10px 20px;
+    border: none;
+    background: #d4af37;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+    box-shadow: 0 5px 0 #b3941f;
+    transition: all 0.02s ease;
+}
+.navBtn:active {
+    box-shadow: 0 2px 0 #b3941f;
+    transform: translateY(3px);
+}
+.navBtn:hover {
+    background: #c19f2e;
+}
+/* NAVBAR END */
+
+
+/* HEADLINE */
+.headline {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    background-color: #d4af37;
+    border-radius: 15px;
+    width: 100%;
+}
+/* HEADLINE END */
+
+
+/* DESCRIPTION */
+.descriptionContainer {
+    font-size: 1.5rem;
+    background-color: #404040;
+    border-radius: 15px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.descriptionPara {
+    white-space: pre-line;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+/* DESCRIPTION END */
+
+
+/* MENU */
+.menuContainer {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 8px solid #d4af37;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+.menuCell {
+    padding: 15px;
+    background-color: #404040;
+}
+.itemName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d4af37;
+}
+.price {
+    color: green;
+}
+/* MENU END */
+
+
+/* FOOTER */
+footer {
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+/* FOOTER END */
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    #navList {
+        gap: 2rem;
+    }
+    .navBtn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+    .headline {
+        font-size: 1.5rem;
+    }
+    .descriptionContainer,.menuContainer, .menuTitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #navList {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+    #headerContainer {
+        padding: 5px;
+    }
+}
+/* MEDIA QUERIES END */

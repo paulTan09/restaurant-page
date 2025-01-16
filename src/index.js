@@ -1,0 +1,10 @@
+import "./global.css";
+import { loadHomePage } from "./home.js";
+import { loadMenuPage } from "./menu.js";
+import { loadAboutPage } from "./about.js";
+import { loadContactPage } from "./contact.js";
+document.addEventListener("DOMContentLoaded", loadHomePage);
+document.getElementById("home").addEventListener("click", loadHomePage);
+document.getElementById("menu").addEventListener("click", loadMenuPage);
+document.getElementById("about").addEventListener("click", loadAboutPage);
+document.getElementById("contact").addEventListener("click", loadContactPage);
